@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  min-height: 100vh;
+  background-color: #00171f;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#title {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 9px;
+  margin: 2rem;
+}
+#controls,
+#sketch-wrapper {
+  background-color: #012f35fa;
+}
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+#sketch {
+  display: grid;
+  grid-template-columns: repeat(35, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+}
+.block {
+  width: 20px;
+  height: 20px;
+  padding: 0 0.6rem;
+  background-color: #fff;
+  border: 1px solid #0000003b;
+}
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: left;
+}
+#eraserButton {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
